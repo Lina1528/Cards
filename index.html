@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="null.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Cards</title>
+</head>
+<body>
+    <h1>Самый вкусный кофе!</h1>
+    <div class="wrap">
+        <div class="cards">
+            <div class="cards-point">
+            <div class="card" data-id="01">
+
+                <div class="front">
+                    <span  class="card-title front-title">Американо</span>
+                    <img class="coffee" src="assets/Americano.png" alt="Americano">
+                    <div class="price-card">80 рублей</div>
+                </div>
+
+                <div class="back">
+                    <span class="card-title">Приготовление</span>
+                    <p class="discription">Американо готовится из одной или двух порций эспрессо, в который добавляется от 30 до 470 мл горячей воды. В процессе приготовления горячую воду можно брать как из эспрессо-машины, так и из отдельного чайника или подогревателя.</p>
+                    
+                    <div class="items counter-wrapper">
+                        <div class="items__control" data-action="minus"></div>
+                        <div class="items__current" data-counter>1</div>
+                        <div class="items__control" data-action="plus"></div>
+                    </div>
+
+                    <button data-cart type="button" class="btn-buy" >Добавить в заказ</button>
+                </div>
+
+            </div>
+
+
+            <div class="card" data-id="02">
+                <div class="front">
+                    <span id="name2" class="card-title front-title">Капучино</span>
+                    <img class="coffee" src="assets/cappuccino1.png" alt="cappuccino">
+                    <div class="price-card">100 рублей</div>
+                </div>
+
+                <div class="back">
+                    <span class="card-title">Приготовление</span>
+                    <p class="discription"> В керамическую чашку из кофемашины наливается одна порция эспрессо, после чего в чашку вливается подогретое и вспененное паром молоко. Иногда при вливании молока в эспрессо бариста создают на поверхности напитка рисунок.</p>
+                    
+                    <div class="items counter-wrapper">
+                        <div class="items__control" data-action="minus"></div>
+                        <div class="items__current" data-counter>1</div>
+                        <div class="items__control" data-action="plus"></div>
+                    </div>
+                    
+                    <button class="btn-buy" data-cart type="button">Добавить в заказ</button>
+                </div>
+            </div>
+
+            <div class="card" data-id="03">
+                <div class="front">
+                    <span id="name3" class="card-title front-title">Торре</span>
+                    <img class="coffee" src="assets/torre.png" alt="torre">
+                    <div class="price-card">120 рублей</div>
+                </div>
+
+                <div class="back">
+                    <span class="card-title">Приготовление</span>
+                    <p class="discription">Основой этого напитка выступает порция эспрессо. Поверх нее выкладывают достаточно плотную молочную пенку. Она должна возвышаться над чашкой приблизительно на пару сантиметров.</p>
+                    
+                    <div class="items counter-wrapper">
+                        <div class="items__control" data-action="minus"></div>
+                        <div class="items__current" data-counter>1</div>
+                        <div class="items__control" data-action="plus"></div>
+                    </div>
+                    
+                    <button class="btn-buy"data-cart type="button">Добавить в заказ</button>
+                </div>
+            </div>
+
+            <div class="card" data-id="04">
+                <div class="front">
+                    <span id="name4" class="card-title front-title">Латте</span>
+                    <img class="coffee" src="assets/latte.png" alt="latte">
+                    <div class="price-card">100 рублей</div>
+                </div>
+
+                <div class="back">
+                    <span class="card-title">Приготовление</span>
+                    <p class="discription">Для изготовления латте используется мока и чашка подогретого молока. Латте готовится из порции эспрессо, которая заливается как горячим, так и холодным вспененным молоком. Соотношение эспрессо, взбитого молока и молочной пены 1:(2 или 3):1.</p>
+                    
+                    <div class="items counter-wrapper">
+                        <div class="items__control" data-action="minus"></div>
+                        <div class="items__current" data-counter>1</div>
+                        <div class="items__control" data-action="plus"></div>
+                    </div>
+                    
+                    <button class="btn-buy"  data-cart type="button">Добавить в заказ</button>
+                </div>
+            </div>
+        </div>
+            <div class="buy-btn"><a href="#popup" class="buy-link popup-link">Оформить заказ!</a></div>
+
+        </div>
+
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-body">
+            <div class="popup-content">
+                <a href="#" class="popup-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <div class="popup-title">Оформите Ваш заказ</div>
+
+
+                <!-- Форма -->
+                <form action="#"  id="form" class="form-body" novalidate>
+                    <div class="form-item">
+                        <label for="formName" class="form-label">Ваше имя*</label>
+                        <input id="formName" type="text" name="name" class="form-input " placeholder="Ваше имя">
+                    </div>
+
+                    <div class="form-item">
+                        <label for="formEmail" class="form-label ">Ваш E-mail*</label>
+                        <input id="formEmail" type="text" name="email" class="form-input input-email" placeholder="Ваш E-mail">
+                    </div>
+
+                    <div class="form-item">
+                        <label for="formPhone" class="form-label ">Ваш телефон*</label>
+                        <input id="formPhone" type="phone" name="phone" class="form-input input-phone" placeholder="Ваш телефон">
+                    </div>
+
+                    <div class="form-item">
+                        <label for="formlist" class="form-label" id="product">Ваш заказ:</label>
+                        
+                        <div class="cart-wrapper">
+                
+                        </div>
+
+                        <p class="final-price"><span>Итого:</span> <span class="total-price">0</span> <span class="rouble">рублей</span></p>
+
+
+                    </div>
+
+                    <div class="form-item">
+                        <div class="checkbox">
+                            <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox checkbox-input input-checkbox">
+                            <label for="formAgreement" class="checkbox-label"><span>Я даю свое согласие на обработку персональных данных в соответствии с <a href="#">Условиями</a>*</span></label>
+                        </div>
+                    </div>
+                    <button type="submit" class="form-btn">Отправить!</button>
+                </form>
+
+                
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/3230c5dc1c.js" crossorigin="anonymous"></script>
+    <script src="jquery-3.6.1.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
